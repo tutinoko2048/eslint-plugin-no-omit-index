@@ -1,0 +1,18 @@
+{
+  "name": "eslint-plugin-no-omit-index",
+  "version": "0.1.0",
+  "description": "Disallow omitting \"index\" in import paths",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "tutinoko2048",
+  "license": "MIT",
+  "keywords": [
+    "eslint",
+    "eslint-plugin",
+    "import",
+    "index",
+    "barrel",
+    "pattern"
+  ]
+}
