@@ -2,8 +2,9 @@
   "name": "eslint-plugin-no-omit-index",
   "version": "0.1.0",
   "description": "Disallow omitting \"index\" in import paths",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "eslint . --rulesdir src/rules"
   },
   "author": "tutinoko2048",
   "license": "MIT",
@@ -14,5 +15,21 @@
     "index",
     "barrel",
     "pattern"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tutinoko2048/eslint-plugin-no-omit-index"
+  },
+  "devDependencies": {
+    "@types/eslint": "^8.56.0",
+    "@types/node": "^20.10.6",
+    "eslint": "^8.56.0"
+  },
+  "dependencies": {
+    "eslint-module-utils": "^2.8.0"
+  },
+  "files": [
+    "src",
+    "test"
   ]
 }

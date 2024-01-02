@@ -1,0 +1,14 @@
+{
+  "env": {
+    "node": true,
+    "es6": true
+  },
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 2020
+  },
+  "plugins": ["eslint-plugin-no-omit-index"],
+  "rules": {
+    "eslint-plugin-no-omit-index/no-omit-index": "error"
+  }
+}

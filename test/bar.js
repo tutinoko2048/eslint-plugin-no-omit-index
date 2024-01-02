@@ -1,0 +1,1 @@
+import { barFunction } from './foo';
