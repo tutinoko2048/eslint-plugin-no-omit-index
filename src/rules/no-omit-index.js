@@ -1,10 +1,10 @@
 // @ts-check
-import { statSync } from 'node:fs';
-import { resolve } from 'node:path';
-import { getFileExtensions } from 'eslint-module-utils/ignore.js';
+const { statSync } = require('node:fs');
+const { resolve } = require('node:path');
+const { getFileExtensions } = require('eslint-module-utils/ignore');
 
 /** @type {import('eslint').Rule.RuleModule} */ 
-const noOmitIndex = {
+module.exports = {
   meta: {
     type: 'suggestion',
     docs: {
@@ -35,5 +35,3 @@ const noOmitIndex = {
     }
   }
 }
-
-export default noOmitIndex;

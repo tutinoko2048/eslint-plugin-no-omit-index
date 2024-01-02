@@ -1,5 +1,5 @@
-import * as eslint from 'eslint';
-import noOmitIndex from '../src/rules/no-omit-index.js';
+const eslint = require('eslint');
+const noOmitIndex = require('../src/rules/no-omit-index');
 
 const validCodes = [
   "import { fooFunction } from './foo/index';",
@@ -16,21 +16,22 @@ const invalidCodes = [
 /** @type {import('eslint').Linter.Config} */
 const config = {
   parserOptions: {
-    sourceType: 'module'
+    sourceType: 'module',
+    ecmaversion: 2020
   },
   env: {
     es6: true,
     node: true
   },
-  globals: {
-    __dirname: true
-  }
 }
 const tester = new eslint.RuleTester(config);
 tester.run('no-omit-index', noOmitIndex, {
   valid: validCodes.map(code => ({ code })),
-  invalid: invalidCodes.map(code => ({ code, errors: [
-    { messageId: 'indexOmitted' }
-  ]}))
+  invalid: invalidCodes.map(code => ({
+    code,
+    errors: [
+      { messageId: 'indexOmitted' }
+    ]
+  }))
 });
 
