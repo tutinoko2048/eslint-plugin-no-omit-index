@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-no-omit-index",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Disallow omitting \"index\" in import paths",
   "type": "module",
   "main": "index.js",
