@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "Disallow omitting \"index\" in import paths",
   "type": "module",
+  "main": "index.js",
   "scripts": {
     "test": "eslint . --rulesdir src/rules"
   },
